@@ -10,11 +10,11 @@ import { getGemSpritesheet } from "./gem"
  * Spritesheet parser helper for all of them.
  */
 export async function parseAllSpritesheets() {
-	await Promise.all([
-		getPlayerSpritesheet().parse(),
-		getOposumSpritesheet().parse(),
-		getGemSpritesheet().parse(),
-		getDeathSpritesheet().parse(),
-		getCollectSpritesheet().parse()
-	])
+  await Promise.all([
+    getPlayerSpritesheet().parse(),
+    getOposumSpritesheet().parse(),
+    getGemSpritesheet().parse(),
+    getDeathSpritesheet().parse(),
+    getCollectSpritesheet().parse()
+  ])
 }

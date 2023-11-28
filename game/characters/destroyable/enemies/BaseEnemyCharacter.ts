@@ -7,11 +7,11 @@ import { beforeBushIdx } from "../../../map"
  * Base enemy class for further customizations.
  */
 export default abstract class BaseEnemyCharacter extends BaseDestroyableCharacter {
-	constructor(app: Application) {
-		super(app, beforeBushIdx)
-	}
+  constructor(app: Application) {
+    super(app, beforeBushIdx)
+  }
 
-	protected getDestroySpritesheet(): Spritesheet<ISpritesheetData> {
-		return getDeathSpritesheet()
-	}
+  protected getDestroySpritesheet(): Spritesheet<ISpritesheetData> {
+    return getDeathSpritesheet()
+  }
 }

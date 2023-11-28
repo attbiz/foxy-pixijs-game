@@ -6,11 +6,11 @@ import BaseEnemyCharacter from "./BaseEnemyCharacter"
  * One possible enemy: The Oposum.
  */
 export default class OposumCharacter extends BaseEnemyCharacter {
-	protected getSpritesheet(): Spritesheet<ISpritesheetData> {
-		return getOposumSpritesheet()
-	}
+  protected getSpritesheet(): Spritesheet<ISpritesheetData> {
+    return getOposumSpritesheet()
+  }
 
-	protected getInitAnimationState(): Game.AnimationState {
-		return "running"
-	}
+  protected getInitAnimationState(): Game.AnimationState {
+    return "running"
+  }
 }
