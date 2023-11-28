@@ -58,7 +58,7 @@ export async function init() {
 
 		// Check if an enemy has reached the door
 		finished = enemies
-			.filter((enemy) => !enemy.isDestroyed())
+			.filter((enemy) => !enemy.animSprite.destroyed)
 			.some((enemy) => enemy.animSprite.x < 50)
 
 		// Check collision with enemies
